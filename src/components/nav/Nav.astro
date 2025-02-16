@@ -7,6 +7,7 @@ import NavDropdownToggle from "@components/nav/NavDropdown/NavDropdownToggle.ast
 import MegaMenuDropdownToggle from "./NavDropdown/MegaMenuDropdownToggle.astro";
 import MobileNav from "@components/nav/MobileNav/MobileNav.astro";
 import SiteLogo from "@components/site-logo/SiteLogo.astro";
+import Search from "@components/Search/Search.astro";
 import Button from "@components/button/Button.astro";
 import LanguageSelect from "@components/language-select/LanguageSelect.astro";
 import ThemeToggle from "@components/theme-toggle/ThemeToggle.astro";
@@ -68,6 +69,8 @@ import { locales } from "@config/siteSettings.json";
 							>
 
 							<ThemeToggle class="" />
+
+							<Search class="md:ml-2" />
 
 							{locales.length > 1 && <LanguageSelect class="" />}
 						</div>
