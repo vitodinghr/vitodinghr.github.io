@@ -52,16 +52,16 @@ export const dataTranslations = {
  */
 export const textTranslations = {
 	en: {
-		hero_text: "Crafting Digital Experiences",
-		hero_description: `Transforming ideas into beautiful, functional designs that leave lasting impressions.`,
+		hero_text: "Lead, not follow.",
+		hero_description: `I ride my bicycle through the crossroads of future and reality, carrying Musk’s wild vision and Jobs’ relentless pursuit of perfection. Along the way, I explore the frontiers of technology, business, and capital, seeking the key to breakthroughs and the possibilities of the unknown.`,
 		back_to_all_posts: "Back to all posts",
 		updated: "Updated",
 		share_this_article: "Share this article",
 	},
 	fr: {
-		hero_text: "Crafting Digital Experiences",
+		hero_text: "Diriger, et non suivre.",
 		hero_description:
-			"Je ne parle pas vraiment français donc j'utilise Google Translate pour quelques parties de cette démo.",
+			"Je roule à bicyclette à la croisée du futur et de la réalité, portant la vision sauvage de Musk et la poursuite incessante de la perfection de Jobs. En chemin, j'explore les frontières de la technologie, des affaires et du capital, à la recherche de la clé des percées et des possibilités de l'inconnu.",
 		back_to_all_posts: "Retour à tous les articles",
 		updated: "Mis à jour",
 		share_this_article: "Partager cet article",

@@ -2,7 +2,7 @@
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
 
-import authorImage from "@/assets/images/designer.jpg";
+import authorImage from "@/assets/images/turtle.jpg";
 
 interface AboutItem {
 	title: string;
@@ -12,18 +12,18 @@ interface AboutItem {
 
 const aboutItems: AboutItem[] = [
 	{
-		title: "UI/UX Design",
-		description: "Creating intuitive and engaging user experiences through thoughtful design",
+		title: "Technology",
+		description: "Exploring the practical application and breakthrough of technology in the industry",
 		icon: "tabler/pencil",
 	},
 	{
-		title: "Web Development",
-		description: "Building modern, responsive websites using the latest technologies",
+		title: "Business",
+		description: "Studying business models, market strategies and corporate growth paths",
 		icon: "tabler/devices",
 	},
 	{
-		title: "Brand Identity",
-		description: "Developing cohesive brand identities that tell compelling stories",
+		title: "Investment",
+		description: "Investigating how capital can promote technological change and industrial upgrading",
 		icon: "tabler/palette",
 	},
 ];
@@ -37,8 +37,7 @@ const aboutItems: AboutItem[] = [
 					<div data-aos="fade-right" data-aos-trigger="#about-alt">
 						<h2 class="text-foreground h2 mb-6">About Me</h2>
 						<p class="description mb-12 leading-relaxed">
-							With over a decade of experience in digital design, I specialize in creating
-							user-centered experiences that combine aesthetics with functionality.
+							Continuously explore the convergence of technology, business and capital, and consider how it shapes industrial change and social development.
 						</p>
 					</div>
 					<div class="grid gap-6 md:grid-cols-2">
@@ -69,7 +68,7 @@ const aboutItems: AboutItem[] = [
 						<div class="relative">
 							<Image
 								src={authorImage}
-								alt="Designer"
+								alt="turtle"
 								class="aspect-square w-full rounded-2xl object-cover shadow-2xl"
 							/>
 						</div>
