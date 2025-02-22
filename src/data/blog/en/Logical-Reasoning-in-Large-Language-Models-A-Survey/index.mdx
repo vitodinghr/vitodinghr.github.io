@@ -1,0 +1,80 @@
+---
+title: "Logical Reasoning in Large Language Models: A Survey"
+description: >-
+  This survey synthesizes recent advancements in logical reasoning within LLMs, a critical area of AI research.
+draft: false
+authors:
+  - main-author
+pubDate: 2025-02-22
+heroImage: ./heroImage.png
+categories:
+  - Paper Interpretation
+  - Large Language Models
+---
+[Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100)
+
+### Highlights
+Logical reasoning
+
+### 1. Research Background
+一直以来，逻辑推理是AI和NLP的根本性挑战。近期，预训练大语言模型和他们浮现出的逻辑推理能力收到广泛关注。
+
+随着LLM成为法律分析和科学发现等高精度领域不可或缺的一部分，确保其推理的正确性和可验证性变得越来越重要。因此post-training阶段的LLM的推理在业界和研究领域都引起了极大的兴趣。
+
+该综述重点关注 LLMs 在符号逻辑（symbolic logic）和形式推理（formal reasoning）中的能力，而非泛化的启发式推理（如 Chain-of-Thought, CoT）。
+
+### 2. Types of Logical Reasoning
+#### 2.1 Deductive Reasoning 演绎推理
+
+**从一般原则推导出具体结论**
+
+- 前提：「所有苹果都是红色的」
+- 前提：「这个水果是苹果」
+- 结论：「这个水果是红色的」
+
+LLMs在数学和形式逻辑领域常采用这种推理，但难以进行长链推理。
+
+#### 2.2 Inductive Reasoning 归纳推理
+
+**由特定观察归纳出一般性结论**
+
+- 观察：「已见到的所有天鹅都是白色的」
+- 归纳：「所有天鹅都是白色的」
+
+适用于科学发现和数据驱动决策，但LLMs仍存在泛化能力不足的问题。
+
+#### 2.3 Abductive Reasoning 溯因推理
+
+**给定观察现象，推测最可能的解释**
+
+- 观察：「地面是湿的」
+- 可能推测：「刚刚下过雨」
+
+主要用于医学诊断、法律分析等领域，LLMs 在处理不完全信息时较为困难。
+
+#### 2.4 Analogical Reasoning 类比推理
+
+**通过比较类似情况推导结论**
+
+- 太阳系中的行星围绕太阳旋转
+- 类比推理：「彗星可能也遵循类似的轨道」
+
+适用于教育、创新设计等领域，但 LLMs 仍难以真正理解类比的本质。
+
+### 3. Datasets and Benchmarks
+### 4. Evaluation
+#### 4.1 Deductive Reasoning 演绎推理
+
+现有 LLMs 在短推理链上表现不错，但在长推理链上会出现错误累积和泛化能力不足的问题。
+
+#### 4.2 Inductive Reasoning 归纳推理
+
+即使是高级LLMs也很难完成简单的归纳任务，Transformer模型即使经过微调，也无法学习基本的逻辑原理，这表明其归纳推理能力有限。
+
+#### 4.3 Abductive Reasoning 溯因推理
+
+LLMs 难以推导最可能的假设，尤其是在法律、医疗等专业领域中。
+
+#### 4.4 Analogical Reasoning 类比推理
+
+现有研究质疑LLMs是否真正依赖类比推理，而不是统计相关性。LLMs可能只是基于表面特征进行推理，而非真正理解类比关系。
