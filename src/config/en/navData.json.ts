@@ -133,7 +133,7 @@ const navConfig: navItem[] = [
 	},
 	{
 		text: "Resources",
-		link: "/blog/",
+		link: "/resources/",
 	},
 	{
 		text: "Resume",
