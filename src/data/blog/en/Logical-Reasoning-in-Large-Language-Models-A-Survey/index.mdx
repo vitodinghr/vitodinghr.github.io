@@ -13,9 +13,6 @@ categories:
 ---
 [Logical Reasoning in Large Language Models: A Survey](https://arxiv.org/pdf/2502.09100)
 
-### Highlights
-Logical reasoning
-
 ### 1. Research Background
 一直以来，逻辑推理是AI和NLP的根本性挑战。近期，预训练大语言模型和他们浮现出的逻辑推理能力收到广泛关注。
 
@@ -80,3 +77,40 @@ LLMs 难以推导最可能的假设，尤其是在法律、医疗等专业领域
 现有研究质疑LLMs是否真正依赖类比推理，而不是统计相关性。LLMs可能只是基于表面特征进行推理，而非真正理解类比关系。
 
 ### 5. Enhancement Methods
+
+四大增强策略：
+
+（1）Data-Centric Approaches 数据驱动的方法
+- 专家标注数据集，提高模型的逻辑一致性
+- 合成数据集，帮助LLMs学习复杂的逻辑推理模式
+- LLM蒸馏数据集
+
+（2）Model-Centric Approaches 模型优化方法
+- 指令微调：通过高质量逻辑任务进行微调
+- 强化学习：尤其是RLHF可用于优化推理路径
+- Inference-Time Decoding
+
+（3）External Knowledge Utilization 外部知识利用
+
+LLMs经常由于幻觉生成错误的答案当执行复杂任务的时候比如逻辑推理，使得结合外部知识来帮助产生正确的答案非常有必要。
+-  “Logic-Query-of-Thoughts” (LQOT)
+
+（4）Neuro-Symbolic Approaches 神经-符号混合方法
+
+结合深度学习（Neural Networks）和符号推理（Symbolic Reasoning）
+
+### 6. Discussion
+- 鲁棒性 vs 泛化能力：
+现有模型对逻辑任务的适应能力有限，需提升跨领域泛化能力。
+
+- 可解释性 vs 性能：
+神经-符号方法提高可解释性，但会带来计算开销，如何权衡是一个挑战。
+
+- 评价标准问题：
+现有评测标准（如准确率）不足以衡量LLMs的逻辑一致性和严谨性，需要开发更严格的度量指标。
+基准必须优先对核心原则（如反证法、倒置法）进行系统测试，而不是针对具体任务的性能进行测试。
+
+**未来方向：**
+- **动态集成神经和符号组件的混合架构，以平衡可扩展性和精确性。**
+- **多模态推理（Multimodal Reasoning）结合文本、图像、代码等多模态信息，提高推理能力。**
+- **跨学科合作--利用形式逻辑、认知科学和机器学习的洞察力--对设计系统至关重要。**
