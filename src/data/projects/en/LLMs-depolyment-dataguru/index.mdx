@@ -5,7 +5,7 @@ image: "./pic.jpg"
 technologies: ["Astro", "TypeScript", "TailwindCSS", "Node.js"]
 demoUrl: "https://stellar.cosmicthemes.com/"
 githubUrl: "https://github.com/Boston343"
-completionDate: 2024-01-15
+completionDate: 2025-03-15
 keyFeatures:
   [
     "Real-time sales analytics",
@@ -19,4 +19,26 @@ order: 4
 
 ## 第一节：安装和设置开发环境，简述Huggingface
 
-This dashboard provides a comprehensive solution for e-commerce businesses to manage their operations efficiently. Built with modern technologies and best practices in mind, it offers a seamless experience for store owners and administrators.
+部署大语言模型的原因：
+
+延迟低，仅局域网或者不需要网路、数据私密性强、成本低（长期使用）, 但回复速度依赖硬件、不容易宕机、更加灵活可微调、模型相对小
+
+部署环境：Windows+驱动+Cuda，语言用Python，必备包Pytorch+Transformers
+
+[HuggingFace：自然语言处理NLP社区和开发者平台](https://huggingface.co/) → Models
+
+[Transformers](https://huggingface.co/docs/transformers/index)由HuggingFace创建和维护，用于处理NLP任务的预训练语言模型。这个库的名称来源于“transformer”模型架构，这是一种革命性的深度学习架构，用于处理序列数据，特别适用于NLP任务。
+
+特点：提供了各种预训练的语言模型；多任务适用性；灵活性，适用于不同的编程框架；允许微调；允许模型交换和共享。
+
+大模型名称后缀是一个数字加“b”，是参数个数，billion十亿，参数量直接影响显卡显存。比如，6b至少需要12g的显存。
+
+[Model Memory Calculator 测算工具](https://huggingface.co/docs/accelerate/main/en/usage_guides/model_size_estimator)
+
+显卡性能取决于最差的那张，多卡并行运算，会消耗大量电力和释放大量热量。建议最低2080。
+
+从Nvidia下载对应的显卡驱动，cmd运行nvidia-smi查看CUDA版本，下载[CUDA Toolkit](https://developer.nvidia.com/cuda-toolkit-archive)
+
+CUDA是一种协助“CPU任务分发+GPU并行处理”的编程模型/平台，用于加速GPU和CPU之间的计算。它使开发者将原本只能通过传统的CPU来完成的计算任务，转移到GPU上运行。
+
+安装虚拟环境[anconda](https://www.anaconda.com/products/distribution)
