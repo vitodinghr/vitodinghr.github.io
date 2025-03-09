@@ -28,15 +28,16 @@ LLM 已在自然语言处理 (NLP) 领域取得了显著成就，不仅能进行
 后训练阶段主要通过微调、强化学习、推理时扩展等手段克服这些挑战。
 
 关键方法论：
-# 微调（Fine-Tuning）：#
+
+**微调（Fine-Tuning）:**
 - 通过在特定任务或领域数据集上更新模型参数来实现任务特定的学习，但需权衡过拟合风险和计算成本。
 - 采用的技术包括 LoRA（低秩适配 Low-rank adaption of LLM）、适配器 (Adapters) 以及检索增强生成 (RAG) 等。
 
-# 强化学习 (Reinforcement Learning, RL)：#
+**强化学习 (Reinforcement Learning, RL)：**
 - 不同于传统 RL，LLM中的RL涉及从大词汇表中选择token，面临稀疏、主观、延迟的反馈，需平衡多重目标。
 - 主要方法有 RLHF（从人类反馈的强化学习）、RLAIF（从 AI 反馈的强化学习）、DPO（直接偏好优化）等。
 
-# 推理时扩展 (Test-Time Scaling)：#
+**推理时扩展 (Test-Time Scaling)：**
 - 通过动态调整推理时的计算资源来提升模型适应性，例如链式思维 (Chain-of-Thought, CoT)、思维树 (Tree-of-Thought, ToT) 以及蒙特卡洛搜索 (Monte Carlo Search)。
 
 论文是2025年2月28日的，Table 1是一个大模型总览列表，直观地对比不同模型的强化学习方法和架构特性。
