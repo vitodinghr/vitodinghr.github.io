@@ -2,13 +2,18 @@
 	"diplomas": [
 		{
 			"title": "Master's in Computer Science",
-			"school": "Stanford University",
+			"school": "The University of Hong Kong",
+			"year": 2025
+		},
+		{
+			"title": "Master's in Engineering",
+			"school": "The University of Hong Kong",
 			"year": 2020
 		},
 		{
-			"title": "Bachelor's in Software Engineering",
-			"school": "MIT",
-			"year": 2018
+			"title": "Bachelor's in Mathematics and Applied Methematics",
+			"school": "Sun Yat-Sen University",
+			"year": 2015
 		}
 	],
 	"certifications": [
